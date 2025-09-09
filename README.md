@@ -1,69 +1,70 @@
-# React + TypeScript + Vite
+# 🎯 Favorite Apps – Vite + React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet est une application web créée avec Vite, React et TypeScript.  
+L’objectif est simple : sélectionner mes 3 applications préférées et les afficher de manière claire et stylisée. 🚀
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Technologies utilisées
 
-## Expanding the ESLint configuration
+- ⚡ Vite — build tool rapide et moderne
+- ⚛️ React — bibliothèque JavaScript pour l’UI
+- 🟦 TypeScript — typage statique
+- 🎨 (optionnel) TailwindCSS ou CSS Modules pour le style
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Installation et lancement
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Cloner le dépôt et installer les dépendances :
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+git clone https://github.com/ton-utilisateur/nom-du-projet.git
+cd nom-du-projet
+npm install
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Lancer le serveur de développement :
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+npm run dev
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Puis ouvre ton navigateur à l’adresse affichée (par défaut http://localhost:5173).
+
+---
+
+## 🛠️ Scripts disponibles
+
+- npm run dev — démarre le serveur en mode développement
+- npm run build — construit l’application pour la production
+- npm run preview — lance un serveur local pour prévisualiser la build
+- npm run lint — exécute l’analyse du code avec ESLint
+
+---
+
+## 📂 Structure du projet
+
+src/
+├─ assets/         # images, icônes, etc.
+├─ components/     # composants réutilisables React
+├─ pages/          # pages principales de l’app
+├─ App.tsx         # racine de l’application
+└─ main.tsx        # point d’entrée
+
+---
+
+## ✨ Fonctionnalités prévues
+
+- Liste de plusieurs applications (ex. YouTube, Spotify, WhatsApp, etc.)
+- Sélection des 3 favorites
+- Affichage stylisé des applications choisies
+- Possibilité d’ajouter ou modifier ses choix (optionnel)
+
+---
+
+## 📸 Aperçu
+
+(à compléter plus tard avec une capture d’écran du site)
+
+---
+
+## 📜 Licence
+
+Ce projet est open-source et distribué sous licence MIT.
