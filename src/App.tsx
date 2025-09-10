@@ -38,21 +38,21 @@ function App() {
         alt="Illustration Olive Tree Bible Study"
       />
       <Cards
-  leftItems={[
-    "Gratuit et sécurisé",
-    "Confidentialité garantie",
-    "Disponible sur tous les appareils",
-  ]}
-  rightItems={[
-    "Chiffrement de bout en bout",
-    "Protection contre le tracking",
-    "Interface moderne et intuitive",
-    "Extensible avec Proton Drive, VPN et Calendar",
-  ]}
-  color="bg-violet-700"
-  url="https://cdn.next.ink/inpactv7/data-next/images/bd/wide-linked-media/12221.jpg"
-  alt="Illustration Proton Mail"
-/>
+        leftItems={[
+          "Gratuit et sécurisé",
+          "Confidentialité garantie",
+          "Disponible sur tous les appareils",
+        ]}
+        rightItems={[
+          "Chiffrement de bout en bout",
+          "Protection contre le tracking",
+          "Interface moderne et intuitive",
+          "Extensible avec Proton Drive, VPN et Calendar",
+        ]}
+        color="bg-violet-700"
+        url="https://cdn.next.ink/inpactv7/data-next/images/bd/wide-linked-media/12221.jpg"
+        alt="Illustration Proton Mail"
+      />
     </div>
   );
 }
